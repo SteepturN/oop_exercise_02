@@ -37,11 +37,10 @@ int main(){
 	
 	char ch(' ');
 	char command[20];
-	bool exit;
 	std::set<std::string> valid_commands = {"a", "s", "d", "dbn", "m", "lth", "exit"};
 	std::cout << a;
 	do {
-		exit = false;
+		bool exit = false;
 		do{
 			read_return_t answer = get_command(valid_commands, command);
 			switch(answer) {
